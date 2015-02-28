@@ -19,3 +19,11 @@
 * {
   font-family: 'Khand', sans-serif;
 }
+
+div.center { text-align: center; }
+
+.font-huge { font-size: 48px; }
+.font-large { font-size: 36px; }
+.font-medium { font-size: 24px; }
+.font-small { font-size: 16px; }
+.font-tiny { font-size: 10px; }
