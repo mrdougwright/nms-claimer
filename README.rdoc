@@ -1,0 +1,17 @@
+== README
+
+This is a simple Rails app for hosting new discoveries made in No Man's Sky.
+
+* Ruby version: 2.0
+* Rails version: Rails 4.1.7
+
+* System dependencies
+	- check the gemfile. Try to keep it light.
+
+* Database creation
+  - postgresql db, not sqlite
+
+* Database initialization
+
+* Deployment instructions
+
