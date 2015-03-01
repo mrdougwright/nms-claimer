@@ -1,7 +1,6 @@
 class Discovery < ActiveRecord::Base
-  attr_accessible :name
-
   belongs_to :explorer
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
+  validates :explorer, presence: true
 end
