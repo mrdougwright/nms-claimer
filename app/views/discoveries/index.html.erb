@@ -1,5 +1,7 @@
 <%= render 'partials/header_one', h1: "RECENT DISCOVERIES" %>
 
-<div class="center">
-  <%= 2 + 2 %> ruby code here.
+<div class="center center-box">
+  <% @discoveries.each do |discovery| %>
+    <p class='left'><%= discovery.name %></p>
+  <% end %>
 </div>

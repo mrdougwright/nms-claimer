@@ -1,0 +1,13 @@
+<!-- get :explorer_id from current_user with devise -->
+<div class="floatr center">
+  <form 
+    action="/discoveries", 
+    notice='Discovery posted!',
+    method="put">
+    <div class="margin-pad">
+      <input class="font-medium" type='name' name='discovery[name]' placeholder='Name' required>
+      <input type='hidden' name='discovery[explorer_id]' value="<%= Explorer.last.id %>">
+    </div>
+    <button class="btn font-medium" type='submit'>Claim my Discovery!</button>
+  </form>
+</div>

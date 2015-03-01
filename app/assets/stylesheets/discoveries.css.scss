@@ -1,36 +1,3 @@
 // Place all the styles related to the discoveries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.claim h1 {
-  margin: 100px 0 0 0;
-}
-.claim h2 { margin-top: 0; }
-
-// http://css3buttongenerator.com/
-.btn {
-  cursor: pointer;
-  background: #bf414c;
-  background-image: -webkit-linear-gradient(top, #bf414c, #0c3c57);
-  background-image: -moz-linear-gradient(top, #bf414c, #0c3c57);
-  background-image: -ms-linear-gradient(top, #bf414c, #0c3c57);
-  background-image: -o-linear-gradient(top, #bf414c, #0c3c57);
-  background-image: linear-gradient(to bottom, #bf414c, #0c3c57);
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
-  border-radius: 9px;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #0c3c57;
-  background-image: -webkit-linear-gradient(top, #0c3c57, #bf414c);
-  background-image: -moz-linear-gradient(top, #0c3c57, #bf414c);
-  background-image: -ms-linear-gradient(top, #0c3c57, #bf414c);
-  background-image: -o-linear-gradient(top, #0c3c57, #bf414c);
-  background-image: linear-gradient(to bottom, #0c3c57, #bf414c);
-  text-decoration: none;
-}

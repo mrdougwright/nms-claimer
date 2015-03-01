@@ -1,5 +1,7 @@
 <%= render 'partials/header_one', h1: "LATEST EXPLORERS" %>
 
-<div class="center">
-  <%= 2 + 2 %> EXPLORERES  LIST....
+<div class="center center-box">
+  <% @explorers.each do |explorer| %>
+    <p class='left'><%= explorer.name %></p>
+  <% end %>
 </div>
