@@ -27,3 +27,8 @@ div.center { text-align: center; }
 .font-medium { font-size: 24px; }
 .font-small { font-size: 16px; }
 .font-tiny { font-size: 10px; }
+
+.no-link {
+  text-decoration: initial;
+  color: initial;
+}
