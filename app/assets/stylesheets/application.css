@@ -18,6 +18,12 @@
 
 * {
   font-family: 'Khand', sans-serif;
+  color: white;
+}
+
+body {
+  background: url(http://www.no-mans-sky.com/elk/wp-content/themes/nomanssky/images/nomanvid.jpg) no-repeat center center fixed;
+  background-color: gray;
 }
 
 div.center { text-align: center; }
@@ -30,7 +36,7 @@ div.center { text-align: center; }
 
 .no-link {
   text-decoration: initial;
-  color: initial;
+  color: white;
 }
 /*.top100 { margin-top: 100px; }*/
 .margin-pad { margin: 20px;}
@@ -61,7 +67,7 @@ input {
   margin: 0 8px;
 }
 
-.header { margin: 80px 0; }
+.header { margin-top: 200px; }
 .header h2 { margin-top: 0; }
 
 /*// http://css3buttongenerator.com/*/
