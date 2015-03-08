@@ -2,16 +2,17 @@
 
 This is a simple Rails app for hosting new discoveries made in No Man's Sky.
 
-* Ruby version: 2.0
-* Rails version: Rails 4.1.7
+### Versions
+  Ruby 2.0
+  Rails 4.1.7
 
-* System dependencies
-	- check the gemfile. Try to keep it light.
+### System dependencies
+  Devise
 
-* Database creation
-  - postgresql db, not sqlite
+### Database
+  PostgreSQL
 
-* Database initialization
+#### Dev Tools
+  Using [Mailcatcher][mailcatcher] for debugging.
 
-* Deployment instructions
-
+[mailcatcher]: http://mailcatcher.me/
