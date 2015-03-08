@@ -1,0 +1,8 @@
+<div class="header center">
+  <% if explorer_signed_in? %>
+    <%= link_to "Logout", destroy_explorer_session_path, method: :delete %>
+  <% end %>
+  <% @explorer.attributes.each do |k,v| %>
+    <p><%= "#{k}: #{v}" %></p>
+  <% end %>
+</div>
