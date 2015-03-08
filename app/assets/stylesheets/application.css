@@ -39,7 +39,7 @@ div.center { text-align: center; }
   color: white;
 }
 /*.top100 { margin-top: 100px; }*/
-.margin-pad { margin: 20px;}
+.margin-pad { margin: 20px; }
 .left {text-align: left;}
 .right {text-align: right;}
 .floatr {float: right;}
@@ -69,6 +69,10 @@ input {
 
 .header { margin-top: 200px; }
 .header h2 { margin-top: 0; }
+
+/* FORMS */
+.field input, button { font-size: 24px; }
+
 
 /*// http://css3buttongenerator.com/*/
 .btn {
