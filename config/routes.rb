@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'discoveries#claim'
 
-  resources :discoveries
+  devise_for :explorers
+
   resources :explorers
+  resources :discoveries
 end

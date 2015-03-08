@@ -1,8 +1,9 @@
 class CreateExplorers < ActiveRecord::Migration
   def change
     create_table :explorers do |t|
-      t.string :name
-      t.string :email
+      # added in Devise
+      # t.string :name
+      # t.string :email
 
       t.timestamps
     end

@@ -2,6 +2,11 @@
   <ul>
     <li><%= link_to "Discoveries", discoveries_path %></li>
     <li><%= link_to "Explorers", explorers_path %></li>
-    <li class="floatr"><%= link_to "New Discovery", new_discovery_path %></li>
+
+    <% if user_signed_in? %>
+      <li class="floatr"><%= link_to "New Discovery", new_discovery_path %></li>
+    <% else %>
+      <li class="floatr"><%= link_to "Login", new_explorer_session_path %></li>
+    <% end %>
   </ul>
 </div>
