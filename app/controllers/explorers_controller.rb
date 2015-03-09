@@ -3,11 +3,7 @@ class ExplorersController < ApplicationController
     @explorers = Explorer.order('created_at DESC')
   end
 
-  def new
-    @explorer = Explorer.new
-  end
-
-  def create
-    json_saved CreateExplorer.find_or_create(params[:explorer])
+  def show
+    @explorer = Explorer.find(params[:id])
   end
 end
