@@ -13,13 +13,4 @@ protected
     devise_parameter_sanitizer.for(:sign_up) << :name
   end
 
-
-  def json_saved(model, message=nil)
-    if model.valid?
-      render json: model, status: 200
-    else
-      render json: model.errors.full_messages, status: :unprocessable
-    end
-  end
-
 end

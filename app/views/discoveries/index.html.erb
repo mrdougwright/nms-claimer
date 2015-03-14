@@ -1,7 +1,13 @@
 <%= render 'partials/header_one', h1: "RECENT DISCOVERIES" %>
 
 <div class="center center-box">
-  <% @discoveries.each do |discovery| %>
-    <p class='left'><%= discovery.name %></p>
-  <% end %>
+	<ul>
+		<% @discoveries.each do |discovery| %>
+		  <li>
+		  	<span class='floatl'><%= discovery.name %></span>
+		  	<span class='floatr'><%= discovery.explorer && discovery.explorer.email %></span>
+		  </li>
+		  <br>
+		<% end %>
+	</ul>
 </div>

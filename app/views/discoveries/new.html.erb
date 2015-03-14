@@ -1,13 +1,11 @@
-<!-- get :explorer_id from current_user with devise -->
 <div class="floatr center">
-  <form 
-    action="/discoveries", 
-    notice='Discovery posted!',
-    method="put">
+   
+  <%= form_for(@discovery) do |f| %>
     <div class="field margin-pad">
-      <input type='name' name='discovery[name]' placeholder='Name' required>
-      <input type='hidden' name='discovery[explorer_id]' value="">
+      <%= f.text_field :name, placeholder: 'Name', required: true  %>
+      <%= f.hidden_field :explorer_id, value: current_explorer.id %>
     </div>
-    <button class="btn" type='submit'>Claim my Discovery!</button>
-  </form>
+    <%= f.submit 'Claim my Discovery', class: 'btn' %>
+  <% end %>
+
 </div>

@@ -10,6 +10,17 @@ class DiscoveriesController < ApplicationController
   end
 
   def create
-    json_saved ClaimDiscovery.create(params[:discovery])
+    @discovery = Discovery.new(discovery_params)
+    if @discovery.save
+      redirect_to action: 'index'
+    else
+      render "new"
+    end
+  end
+
+private
+
+  def discovery_params
+    params.require(:discovery).permit(:name, :explorer_id)
   end
 end
